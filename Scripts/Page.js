@@ -23,6 +23,12 @@ const showPost = () => {
         div.className = "post";
         container.appendChild("div");
         let post = postArr[x]
-        div.innerHTML = `<ul></ul>`
+        div.innerHTML = `<ul>
+        <li>userId: ${post.userId}</li>
+        <li>id: ${post.id}</li>
+        <li>title: ${post.title}</li>
+        <li>body: ${post.body}</li>
+        </ul>`
+        
     } 
 }  
