@@ -12,6 +12,7 @@ xhr.onload = function () {
     let response = JSON.parse(this.responseText);
     console.log(response);
     postArr = response;
+    showPost()
 };
 xhr.send();
 
@@ -21,7 +22,7 @@ const showPost = () => {
     for (let x in postArr) {
         let div = document.createElement("div");
         div.className = "post";
-        container.appendChild("div");
+        container.appendChild(div);
         let post = postArr[x]
         div.innerHTML = `<ul>
         <li>userId: ${post.userId}</li>
