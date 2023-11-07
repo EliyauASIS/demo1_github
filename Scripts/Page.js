@@ -1,6 +1,6 @@
 let user = JSON.parse(sessionStorage.getItem("user"))
 
-let title = document.getElementById("title2")
+let title = document.getElementById("title")
 
 title.innerHTML += user.firstname + " " + user.lastname
 
@@ -16,7 +16,7 @@ xhr.onload = function () {
 };
 xhr.send();
 
-let container = document.getElementById("container2"); 
+let container = document.getElementById("container"); 
 
 const showPost = () => {
     for (let x in postArr) {
@@ -30,6 +30,5 @@ const showPost = () => {
         <li>title: ${post.title}</li>
         <li>body: ${post.body}</li>
         </ul>`
-        
     } 
 }  

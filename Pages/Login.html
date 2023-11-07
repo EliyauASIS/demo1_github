@@ -7,19 +7,25 @@
     <title>Document</title>
   </head>
   <body>
-  
-      <div id="container2">
-        <input type="text" name="Uname" id="Uname" placeholder="User name" />
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+      <div id="container">
+        <div id="title">
+          <h1 id="Login_title">Login</h1>
+      </div>
+        <input type="text" name="Uname" id="Uname" placeholder="User name"/></br>
         <input type="text" name="pass" id="pass" placeholder="Password" />
+        <div id="create">
+        <a id="new_user" href="../pages/Register.html">Create new user</a>
+      </div>
         <input
           type="button"
           value="Log-In"
           onclick="login_event(Uname.value, pass.value)"
         />
       </div>
-      <div id="create">
-        <a id="new_user" href="../pages/Register.html">Create new user</a>
-      </div>
+      
     <script src="../Scripts/Login.js"></script>
   </body>
 </html>
